@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 using namespace std;
-class BaseWorker 
+class WorkerBase 
 {
 private:
 	string m_name; // ÐÕÃû
@@ -9,14 +9,14 @@ private:
 	char m_rank;  // Ö°¼¶ £¨A,B,C£©
 
 public:
-	~BaseWorker();
-	BaseWorker();
-	BaseWorker(string name, string position,char rank = 0);
+	~WorkerBase();
+	WorkerBase();
+	WorkerBase(string name, string position,char rank = 0);
 	void set_m_name(string name);
 	void set_m_position(string position);
 	void set_m_rank(char rank);
 	string get_m_name();
 	string get_position();
 	char get_m_rank();
-	virtual void showResponsibility() = 0;
+	virtual void ShowResponsibility() = 0;
 };

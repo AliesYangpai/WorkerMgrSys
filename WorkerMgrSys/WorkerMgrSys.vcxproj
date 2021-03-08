@@ -124,13 +124,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="woker_mgr_sys\bean\menu\worker_sys_menu_item_collection.cpp" />
+    <ClCompile Include="woker_mgr_sys\bean\menu\worker_sys_menu_item.cpp" />
+    <ClCompile Include="woker_mgr_sys\bean\menu\worker_sys_menu.cpp" />
+    <ClCompile Include="woker_mgr_sys\worker_sys_data.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="woker_mgr_sys\bean\base_worker.h" />
+    <ClInclude Include="woker_mgr_sys\bean\worker\worker.h" />
+    <ClInclude Include="woker_mgr_sys\bean\worker\worker_base.h" />
     <ClInclude Include="woker_mgr_sys\bean\menu\worker_sys_menu.h" />
     <ClInclude Include="woker_mgr_sys\bean\menu\worker_sys_menu_item.h" />
     <ClInclude Include="woker_mgr_sys\bean\menu\worker_sys_menu_item_collection.h" />
-    <ClInclude Include="woker_mgr_sys\sys_operate\method_operate.h" />
+    <ClInclude Include="woker_mgr_sys\worker_mgr.h" />
+    <ClInclude Include="woker_mgr_sys\worker_sys_data.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

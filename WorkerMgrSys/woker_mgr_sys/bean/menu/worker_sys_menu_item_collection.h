@@ -5,11 +5,13 @@ using namespace std;
 class WorkerSysMenuItemCollection 
 {
 private:
-	WorkerSysMenuItem* m_arr_item[8];
+	int currentIndex = 0;
+private:
+	WorkerSysMenuItem* m_arr_item;
 public:
 	WorkerSysMenuItemCollection();
 	~WorkerSysMenuItemCollection();
 
 	void add(WorkerSysMenuItem* p_item);
-	WorkerSysMenuItem* getItem(int position);
+	WorkerSysMenuItem* get(int position);
 };

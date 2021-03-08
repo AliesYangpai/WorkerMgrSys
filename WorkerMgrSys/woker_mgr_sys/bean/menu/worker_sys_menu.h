@@ -13,7 +13,7 @@ public:
 	WorkerSysMenu();
 	
 	void set_m_title(string title);
-	void set_m_wsmi_collection(WorkerSysMenuItemCollection* m_wsmi_collection);
+	void set_m_wsmi_collection(WorkerSysMenuItemCollection* wsmi_collection);
 	string get_m_title();
 	WorkerSysMenuItemCollection* get_m_wsmi_collection();
 };
